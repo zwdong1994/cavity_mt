@@ -38,6 +38,8 @@ public:
 
 private:
     CondVar(Mutex *mu);
+    CondVar(CondVar const&);
+    CondVar& operator=(CondVar const&);
     ~CondVar();
     pthread_cond_t cv_;
     Mutex *mu_;

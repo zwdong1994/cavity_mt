@@ -14,7 +14,7 @@ class ocs_sim {
 public:
 
     void init(); //create a simulated ocs
-    void set_ocs_status(int addr, int length, int status);
+    int set_ocs_status(int addr, int length, int status);
     void show_ocs();
 
     static ocs_sim *Get_ocs();
