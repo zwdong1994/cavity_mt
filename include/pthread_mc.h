@@ -11,24 +11,34 @@ class CondVar;
 
 class Mutex{
 public:
-    Mutex();
-    ~Mutex();
 
     void lock();
     void unlock();
 
-
+    static Mutex *Get_mutex();
+    static Mutex *mu_instance;
     pthread_mutex_t mu_;
+
+private:
+    Mutex();
+    Mutex(Mutex const&);
+    Mutex& operator=(Mutex const&);
+    ~Mutex();
 };
 
 class CondVar{
 public:
-    CondVar(Mutex *mu);
-    ~CondVar();
+
     void wait();
     void signal();
 
+    static CondVar *Get_cond(Mutex *mu);
+    static CondVar *cv_instance;
+
+
 private:
+    CondVar(Mutex *mu);
+    ~CondVar();
     pthread_cond_t cv_;
     Mutex *mu_;
 };
