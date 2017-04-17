@@ -14,7 +14,7 @@ public:
     ~cav(){}
 
     template <typename T>
-            handle* alloc(T size);
+            pthread_t alloc(T size, handle *h);
     template <typename T>
             T dealloc(handle *sst_f);
     template <typename T>

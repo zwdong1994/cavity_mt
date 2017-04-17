@@ -105,9 +105,33 @@ CMakeFiles/cavity_mt.dir/src/cav_impl.cpp.o.provides: CMakeFiles/cavity_mt.dir/s
 CMakeFiles/cavity_mt.dir/src/cav_impl.cpp.o.provides.build: CMakeFiles/cavity_mt.dir/src/cav_impl.cpp.o
 
 
+CMakeFiles/cavity_mt.dir/src/handle.cpp.o: CMakeFiles/cavity_mt.dir/flags.make
+CMakeFiles/cavity_mt.dir/src/handle.cpp.o: ../src/handle.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/victor/zwd/cavity_mt/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/cavity_mt.dir/src/handle.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cavity_mt.dir/src/handle.cpp.o -c /home/victor/zwd/cavity_mt/src/handle.cpp
+
+CMakeFiles/cavity_mt.dir/src/handle.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cavity_mt.dir/src/handle.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/victor/zwd/cavity_mt/src/handle.cpp > CMakeFiles/cavity_mt.dir/src/handle.cpp.i
+
+CMakeFiles/cavity_mt.dir/src/handle.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cavity_mt.dir/src/handle.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/victor/zwd/cavity_mt/src/handle.cpp -o CMakeFiles/cavity_mt.dir/src/handle.cpp.s
+
+CMakeFiles/cavity_mt.dir/src/handle.cpp.o.requires:
+
+.PHONY : CMakeFiles/cavity_mt.dir/src/handle.cpp.o.requires
+
+CMakeFiles/cavity_mt.dir/src/handle.cpp.o.provides: CMakeFiles/cavity_mt.dir/src/handle.cpp.o.requires
+	$(MAKE) -f CMakeFiles/cavity_mt.dir/build.make CMakeFiles/cavity_mt.dir/src/handle.cpp.o.provides.build
+.PHONY : CMakeFiles/cavity_mt.dir/src/handle.cpp.o.provides
+
+CMakeFiles/cavity_mt.dir/src/handle.cpp.o.provides.build: CMakeFiles/cavity_mt.dir/src/handle.cpp.o
+
+
 CMakeFiles/cavity_mt.dir/src/ocs_sim.cpp.o: CMakeFiles/cavity_mt.dir/flags.make
 CMakeFiles/cavity_mt.dir/src/ocs_sim.cpp.o: ../src/ocs_sim.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/victor/zwd/cavity_mt/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/cavity_mt.dir/src/ocs_sim.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/victor/zwd/cavity_mt/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/cavity_mt.dir/src/ocs_sim.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cavity_mt.dir/src/ocs_sim.cpp.o -c /home/victor/zwd/cavity_mt/src/ocs_sim.cpp
 
 CMakeFiles/cavity_mt.dir/src/ocs_sim.cpp.i: cmake_force
@@ -131,7 +155,7 @@ CMakeFiles/cavity_mt.dir/src/ocs_sim.cpp.o.provides.build: CMakeFiles/cavity_mt.
 
 CMakeFiles/cavity_mt.dir/src/pthread_mc.cpp.o: CMakeFiles/cavity_mt.dir/flags.make
 CMakeFiles/cavity_mt.dir/src/pthread_mc.cpp.o: ../src/pthread_mc.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/victor/zwd/cavity_mt/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/cavity_mt.dir/src/pthread_mc.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/victor/zwd/cavity_mt/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/cavity_mt.dir/src/pthread_mc.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cavity_mt.dir/src/pthread_mc.cpp.o -c /home/victor/zwd/cavity_mt/src/pthread_mc.cpp
 
 CMakeFiles/cavity_mt.dir/src/pthread_mc.cpp.i: cmake_force
@@ -157,6 +181,7 @@ CMakeFiles/cavity_mt.dir/src/pthread_mc.cpp.o.provides.build: CMakeFiles/cavity_
 cavity_mt_OBJECTS = \
 "CMakeFiles/cavity_mt.dir/src/cav.cpp.o" \
 "CMakeFiles/cavity_mt.dir/src/cav_impl.cpp.o" \
+"CMakeFiles/cavity_mt.dir/src/handle.cpp.o" \
 "CMakeFiles/cavity_mt.dir/src/ocs_sim.cpp.o" \
 "CMakeFiles/cavity_mt.dir/src/pthread_mc.cpp.o"
 
@@ -165,11 +190,12 @@ cavity_mt_EXTERNAL_OBJECTS =
 
 cavity_mt: CMakeFiles/cavity_mt.dir/src/cav.cpp.o
 cavity_mt: CMakeFiles/cavity_mt.dir/src/cav_impl.cpp.o
+cavity_mt: CMakeFiles/cavity_mt.dir/src/handle.cpp.o
 cavity_mt: CMakeFiles/cavity_mt.dir/src/ocs_sim.cpp.o
 cavity_mt: CMakeFiles/cavity_mt.dir/src/pthread_mc.cpp.o
 cavity_mt: CMakeFiles/cavity_mt.dir/build.make
 cavity_mt: CMakeFiles/cavity_mt.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/victor/zwd/cavity_mt/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable cavity_mt"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/victor/zwd/cavity_mt/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable cavity_mt"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/cavity_mt.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -179,6 +205,7 @@ CMakeFiles/cavity_mt.dir/build: cavity_mt
 
 CMakeFiles/cavity_mt.dir/requires: CMakeFiles/cavity_mt.dir/src/cav.cpp.o.requires
 CMakeFiles/cavity_mt.dir/requires: CMakeFiles/cavity_mt.dir/src/cav_impl.cpp.o.requires
+CMakeFiles/cavity_mt.dir/requires: CMakeFiles/cavity_mt.dir/src/handle.cpp.o.requires
 CMakeFiles/cavity_mt.dir/requires: CMakeFiles/cavity_mt.dir/src/ocs_sim.cpp.o.requires
 CMakeFiles/cavity_mt.dir/requires: CMakeFiles/cavity_mt.dir/src/pthread_mc.cpp.o.requires
 

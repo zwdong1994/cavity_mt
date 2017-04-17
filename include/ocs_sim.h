@@ -5,8 +5,8 @@
 #ifndef CAVITY_MT_OCS_SIM_H
 #define CAVITY_MT_OCS_SIM_H
 
-#define VALID 0
-#define IN_USE 1
+#define FREE 0
+#define VALID 1
 #define INVALID 2
 #define BAD 3
 
@@ -19,7 +19,15 @@ public:
 
     static ocs_sim *Get_ocs();
     static ocs_sim *ocs_instance;
-
+    int alloc_addr;
+    int mt_num;
+    int alloc_max_length;
+    struct cav_frag_mt{
+        int first_addr;
+        int length;
+        int statu;
+    }mt[200];
+    int delete_mt(int first_ad);
 
 private:
     ocs_sim();
@@ -28,7 +36,6 @@ private:
     ~ocs_sim();
 
     int *ocs_blk;
-    int length;
 };
 
 

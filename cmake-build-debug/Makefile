@@ -177,6 +177,33 @@ src/cav_impl.cpp.s:
 	$(MAKE) -f CMakeFiles/cavity_mt.dir/build.make CMakeFiles/cavity_mt.dir/src/cav_impl.cpp.s
 .PHONY : src/cav_impl.cpp.s
 
+src/handle.o: src/handle.cpp.o
+
+.PHONY : src/handle.o
+
+# target to build an object file
+src/handle.cpp.o:
+	$(MAKE) -f CMakeFiles/cavity_mt.dir/build.make CMakeFiles/cavity_mt.dir/src/handle.cpp.o
+.PHONY : src/handle.cpp.o
+
+src/handle.i: src/handle.cpp.i
+
+.PHONY : src/handle.i
+
+# target to preprocess a source file
+src/handle.cpp.i:
+	$(MAKE) -f CMakeFiles/cavity_mt.dir/build.make CMakeFiles/cavity_mt.dir/src/handle.cpp.i
+.PHONY : src/handle.cpp.i
+
+src/handle.s: src/handle.cpp.s
+
+.PHONY : src/handle.s
+
+# target to generate assembly for a file
+src/handle.cpp.s:
+	$(MAKE) -f CMakeFiles/cavity_mt.dir/build.make CMakeFiles/cavity_mt.dir/src/handle.cpp.s
+.PHONY : src/handle.cpp.s
+
 src/ocs_sim.o: src/ocs_sim.cpp.o
 
 .PHONY : src/ocs_sim.o
@@ -246,6 +273,9 @@ help:
 	@echo "... src/cav_impl.o"
 	@echo "... src/cav_impl.i"
 	@echo "... src/cav_impl.s"
+	@echo "... src/handle.o"
+	@echo "... src/handle.i"
+	@echo "... src/handle.s"
 	@echo "... src/ocs_sim.o"
 	@echo "... src/ocs_sim.i"
 	@echo "... src/ocs_sim.s"

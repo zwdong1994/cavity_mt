@@ -8,8 +8,8 @@ set(CMAKE_CXX_STANDARD 11)
 
 SET(SOURCE_FILE     include/cav.h src/cav.cpp
                     include/cav_impl.h src/cav_impl.cpp
-                    include/handle.h
+                    include/handle.h src/handle.cpp
                     include/ocs_sim.h src/ocs_sim.cpp
-                    include/pthread_mc.h src/pthread_mc.cpp)
+                    include/pthread_mc.h src/pthread_mc.cpp )
 
 add_executable(cavity_mt ${SOURCE_FILE})

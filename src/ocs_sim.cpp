@@ -11,6 +11,11 @@
 
 ocs_sim::ocs_sim() {
     ocs_blk = new int[200];
+    mt_num = 0;
+    alloc_addr = 0;
+    alloc_max_length = 200;
+    memset(mt, 0, sizeof(struct cav_frag_mt) * 200);
+    init();
 }
 
 ocs_sim::~ocs_sim() {
@@ -21,7 +26,7 @@ ocs_sim* ocs_sim::ocs_instance = NULL;
 
 ocs_sim* ocs_sim::Get_ocs() {
     static pthread_mutex_t mu = PTHREAD_MUTEX_INITIALIZER;
-    if(ocs_instance = NULL){
+    if(ocs_instance == NULL){
         pthread_mutex_lock(&mu);
         if(ocs_instance ==NULL)
             ocs_instance = new ocs_sim();
@@ -33,7 +38,7 @@ ocs_sim* ocs_sim::Get_ocs() {
 void ocs_sim::init() {
     int i;
     for(i = 0; i < 200; i++){
-        ocs_blk[i] = VALID;
+        ocs_blk[i] = FREE;
     }
 }
 
@@ -61,16 +66,33 @@ void ocs_sim::show_ocs() {
     for( int i = 0; i < 200; i++ ){
         if(i % 25 == 0 && i != 0)
             std::cout<<std::endl<<std::endl;
-        if( ocs_blk[i] == 0 ){
+        if( ocs_blk[i] == FREE ){
             std::cout<<std::left<<std::setw(4)<<"O";
         }
-        else if( ocs_blk[i] == 1 ){
+        else if( ocs_blk[i] == VALID ){
             std::cout<<std::left<<std::setw(4)<<"-";
         }
-        else if( ocs_blk[i] == 2 ){
+        else if( ocs_blk[i] == INVALID ){
             std::cout<<std::left<<std::setw(4)<<"X";
         }
         else
             std::cout<<std::left<<std::setw(4)<<"*";
     }
+}
+
+int ocs_sim::delete_mt(int first_ad) {
+    int delete_id = -1;
+    for(int i = 0; i < mt_num; i++){
+        if(mt[i].first_addr == first_ad) {
+            delete_id = i;
+            break;
+        }
+    }
+    if(delete_id == -1)
+        return -1;
+    for(int i = delete_id; i < mt_num-1; i++){
+        mt[i] = mt[i+1];
+    }
+    mt_num--;
+    return 1;
 }
