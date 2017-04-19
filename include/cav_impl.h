@@ -37,6 +37,12 @@ private:
         handle *h;
         T length;
     }par;
+
+    struct alloc_str{
+        int size;
+        int addr;
+        struct alloc_str *next;
+    }*alloc;
     int alloc_run(T length, handle *h);
     int ocs_alloc_impl(T length, handle *h);
     int seek_ocs_mt(T length, handle *h, T *left_length);

@@ -12,7 +12,7 @@ class cav {
 public:
     cav(){}
     ~cav(){}
-
+    cav_impl cimpl;
     template <typename T>
             pthread_t alloc(T size, handle *h);
     template <typename T>

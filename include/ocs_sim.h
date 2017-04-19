@@ -28,6 +28,7 @@ public:
         int statu;
     }mt[200];
     int delete_mt(int first_ad);
+    int add_mt(int first_ad, int size);
 
 private:
     ocs_sim();

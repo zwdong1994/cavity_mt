@@ -36,12 +36,23 @@ pthread_t  cav_impl<T>::alloc_impl(T length, handle *h) {
 
 template <typename T>
 T cav_impl<T>::dealloc_impl(handle *sst_f) {
-
+    struct alloc_str * p = NULL;
+    T length = 0;
+    alloc = (alloc_str *) sst_f -> get_alloc();
+    ocs_sim *ocs = ocs_sim::Get_ocs();
+    p = alloc;
+    while(p != NULL){
+        length += p -> size;
+        ocs -> add_mt(p->addr, p->size);
+    }
+    return length;
 }
 
 template <typename T>
 int cav_impl<T>::init_impl(T start, T end) {
-
+    ocs_sim *ocs = ocs_sim::Get_ocs();
+    ocs ->set_ocs_status(start, end - start, FREE);
+    return 1;
 }
 
 template <typename T>

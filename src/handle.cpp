@@ -40,6 +40,10 @@ int handle<T>::creat_new_alloc(T size, T addr) {
     return 1;
 }
 
+struct alloc_str* handle::get_alloc() {
+    return alloc;
+}
+
 void handle::show() {
     struct alloc_str *p = alloc;
     int i = 0;
