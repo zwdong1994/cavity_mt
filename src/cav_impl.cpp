@@ -10,6 +10,7 @@
 #include <string.h>
 #include "pthread_mc.h"
 #include "ocs_sim.h"
+#include "handle.h"
 
 template <typename T>
 cav_impl<T>::cav_impl() {
@@ -38,7 +39,7 @@ template <typename T>
 T cav_impl<T>::dealloc_impl(handle *sst_f) {
     struct alloc_str * p = NULL;
     T length = 0;
-    alloc = (alloc_str *) sst_f -> get_alloc();
+    alloc = (alloc_str *) sst_f -> alloc;
     ocs_sim *ocs = ocs_sim::Get_ocs();
     p = alloc;
     while(p != NULL){

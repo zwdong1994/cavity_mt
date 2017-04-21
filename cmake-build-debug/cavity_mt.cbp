@@ -101,6 +101,9 @@
 		<Unit filename="/home/victor/zwd/cavity_mt/include/pthread_mc.h">
 			<Option target="cavity_mt"/>
 		</Unit>
+		<Unit filename="/home/victor/zwd/cavity_mt/main.cpp">
+			<Option target="cavity_mt"/>
+		</Unit>
 		<Unit filename="/home/victor/zwd/cavity_mt/src/cav.cpp">
 			<Option target="cavity_mt"/>
 		</Unit>

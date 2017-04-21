@@ -123,6 +123,33 @@ cavity_mt/fast:
 	$(MAKE) -f CMakeFiles/cavity_mt.dir/build.make CMakeFiles/cavity_mt.dir/build
 .PHONY : cavity_mt/fast
 
+main.o: main.cpp.o
+
+.PHONY : main.o
+
+# target to build an object file
+main.cpp.o:
+	$(MAKE) -f CMakeFiles/cavity_mt.dir/build.make CMakeFiles/cavity_mt.dir/main.cpp.o
+.PHONY : main.cpp.o
+
+main.i: main.cpp.i
+
+.PHONY : main.i
+
+# target to preprocess a source file
+main.cpp.i:
+	$(MAKE) -f CMakeFiles/cavity_mt.dir/build.make CMakeFiles/cavity_mt.dir/main.cpp.i
+.PHONY : main.cpp.i
+
+main.s: main.cpp.s
+
+.PHONY : main.s
+
+# target to generate assembly for a file
+main.cpp.s:
+	$(MAKE) -f CMakeFiles/cavity_mt.dir/build.make CMakeFiles/cavity_mt.dir/main.cpp.s
+.PHONY : main.cpp.s
+
 src/cav.o: src/cav.cpp.o
 
 .PHONY : src/cav.o
@@ -267,6 +294,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... cavity_mt"
+	@echo "... main.o"
+	@echo "... main.i"
+	@echo "... main.s"
 	@echo "... src/cav.o"
 	@echo "... src/cav.i"
 	@echo "... src/cav.s"

@@ -6,6 +6,7 @@
 #define CAVITY_MT_CAV_IMPL_H
 
 #include <pthread.h>
+#include <iostream>
 #include "handle.h"
 
 

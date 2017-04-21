@@ -4,6 +4,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/cavity_mt.dir/src/handle.cpp.o"
   "CMakeFiles/cavity_mt.dir/src/ocs_sim.cpp.o"
   "CMakeFiles/cavity_mt.dir/src/pthread_mc.cpp.o"
+  "CMakeFiles/cavity_mt.dir/main.cpp.o"
   "cavity_mt.pdb"
   "cavity_mt"
 )

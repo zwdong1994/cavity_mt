@@ -8,17 +8,15 @@
 #include <iostream>
 #include "handle.h"
 
+
+template <class T>
 class cav {
 public:
-    cav(){}
-    ~cav(){}
-    cav_impl cimpl;
-    template <typename T>
-            pthread_t alloc(T size, handle *h);
-    template <typename T>
-            T dealloc(handle *sst_f);
-    template <typename T>
-            int init(T start, T end);
+    cav();
+    ~cav();
+    pthread_t alloc(T size, handle *h);
+    T dealloc(handle *sst_f);
+    int init(T start, T end);
 
 };
 

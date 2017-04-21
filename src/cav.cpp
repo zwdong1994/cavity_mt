@@ -3,31 +3,33 @@
 //
 
 #include <pthread.h>
-#include "cav_impl.h"
+#include <iostream>
 #include "cav.h"
+#include "cav_impl.h"
 
-cav::cav() {
+template <class T>
+cav<T>::cav() {
+
+}
+template <class T>
+cav<T>::~cav() {
 
 }
 
-cav::~cav() {
-
-}
-
-template <typename T>
-pthread_t cav::alloc(T size, handle* h) {
-
+template <class T>
+pthread_t cav<T>::alloc(T size, handle* h) {
+    cav_impl<T> cimpl;
     return cimpl.alloc_impl(size, h);
 }
 
-template <typename T>
-T cav::dealloc(handle *sst_f) {
-
+template <class T>
+T cav<T>::dealloc(handle *sst_f) {
+    cav_impl<T> cimpl;
     return cimpl.dealloc_impl(sst_f);
 }
 
-template <typename T>
-int cav::init(T start, T end) {
-
+template <class T>
+int cav<T>::init(T start, T end) {
+    cav_impl<T> cimpl;
     return cimpl.init_impl(start, end);
 }

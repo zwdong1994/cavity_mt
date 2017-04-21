@@ -11,9 +11,8 @@ public:
 
     static handle *Get_handle();
     static handle *handle_instance;
-    template <typename T>
-    int creat_new_alloc(T size, T addr);
-    struct alloc_str * get_alloc();
+    int creat_new_alloc(int size, int addr);
+//    struct alloc_str * get_alloc();
     void show();
     struct alloc_str{
         int size;
@@ -21,11 +20,12 @@ public:
         struct alloc_str *next;
     }*alloc;
 
-private:
     handle();
+    ~handle();
+private:
     handle(handle const&);
     handle& operator=(handle const&);
-    ~handle();
+
 
 };
 

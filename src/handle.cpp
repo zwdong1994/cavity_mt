@@ -28,8 +28,8 @@ handle* handle::Get_handle() {
     }
     return handle_instance;
 }
-template <typename T>
-int handle<T>::creat_new_alloc(T size, T addr) {
+
+int handle::creat_new_alloc(int size, int addr) {
     struct alloc_str *p = new alloc_str;
     struct alloc_str *hp = NULL;
     p -> addr = addr;
@@ -40,9 +40,9 @@ int handle<T>::creat_new_alloc(T size, T addr) {
     return 1;
 }
 
-struct alloc_str* handle::get_alloc() {
+/*struct alloc_str* handle::get_alloc() {
     return alloc;
-}
+}*/
 
 void handle::show() {
     struct alloc_str *p = alloc;
