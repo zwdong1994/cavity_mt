@@ -1,126 +1,120 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <CodeBlocks_project_file>
-   <FileVersion major="1" minor="6" />
-   <Project>
-      <Option title="cavity_mt" />
-      <Option makefile_is_custom="1" />
-      <Option compiler="gcc" />
-      <Option virtualFolders="CMake Files\;" />
-      <Build>
-      <Target title="all">
-         <Option working_dir="/home/victor/zwd/cavity_mt" />
-         <Option type="4" />
-         <MakeCommands>
-            <Build command="/usr/bin/make -f &quot;/home/victor/zwd/cavity_mt/Makefile&quot;  VERBOSE=1 all" />
-            <CompileFile command="/usr/bin/make -f &quot;/home/victor/zwd/cavity_mt/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
-            <Clean command="/usr/bin/make -f &quot;/home/victor/zwd/cavity_mt/Makefile&quot;  VERBOSE=1 clean" />
-            <DistClean command="/usr/bin/make -f &quot;/home/victor/zwd/cavity_mt/Makefile&quot;  VERBOSE=1 clean" />
-         </MakeCommands>
-      </Target>
-      <Target title="edit_cache">
-         <Option working_dir="/home/victor/zwd/cavity_mt" />
-         <Option type="4" />
-         <MakeCommands>
-            <Build command="/usr/bin/make -f &quot;/home/victor/zwd/cavity_mt/Makefile&quot;  VERBOSE=1 edit_cache" />
-            <CompileFile command="/usr/bin/make -f &quot;/home/victor/zwd/cavity_mt/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
-            <Clean command="/usr/bin/make -f &quot;/home/victor/zwd/cavity_mt/Makefile&quot;  VERBOSE=1 clean" />
-            <DistClean command="/usr/bin/make -f &quot;/home/victor/zwd/cavity_mt/Makefile&quot;  VERBOSE=1 clean" />
-         </MakeCommands>
-      </Target>
-      <Target title="rebuild_cache">
-         <Option working_dir="/home/victor/zwd/cavity_mt" />
-         <Option type="4" />
-         <MakeCommands>
-            <Build command="/usr/bin/make -f &quot;/home/victor/zwd/cavity_mt/Makefile&quot;  VERBOSE=1 rebuild_cache" />
-            <CompileFile command="/usr/bin/make -f &quot;/home/victor/zwd/cavity_mt/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
-            <Clean command="/usr/bin/make -f &quot;/home/victor/zwd/cavity_mt/Makefile&quot;  VERBOSE=1 clean" />
-            <DistClean command="/usr/bin/make -f &quot;/home/victor/zwd/cavity_mt/Makefile&quot;  VERBOSE=1 clean" />
-         </MakeCommands>
-      </Target>
-      <Target title="cavity_mt">
-         <Option output="/home/victor/zwd/cavity_mt/cavity_mt" prefix_auto="0" extension_auto="0" />
-         <Option working_dir="/home/victor/zwd/cavity_mt" />
-         <Option object_output="./" />
-         <Option type="1" />
-         <Option compiler="gcc" />
-         <Compiler>
-            <Add directory="/home/victor/zwd/cavity_mt/./include" />
-            <Add directory="/usr/include" />
-            <Add directory="/usr/include/c++/5" />
-            <Add directory="/usr/include/c++/5/backward" />
-            <Add directory="/usr/include/x86_64-linux-gnu" />
-            <Add directory="/usr/include/x86_64-linux-gnu/c++/5" />
-            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include" />
-            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed" />
-            <Add directory="/usr/local/include" />
-         </Compiler>
-         <MakeCommands>
-            <Build command="/usr/bin/make -f &quot;/home/victor/zwd/cavity_mt/Makefile&quot;  VERBOSE=1 cavity_mt" />
-            <CompileFile command="/usr/bin/make -f &quot;/home/victor/zwd/cavity_mt/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
-            <Clean command="/usr/bin/make -f &quot;/home/victor/zwd/cavity_mt/Makefile&quot;  VERBOSE=1 clean" />
-            <DistClean command="/usr/bin/make -f &quot;/home/victor/zwd/cavity_mt/Makefile&quot;  VERBOSE=1 clean" />
-         </MakeCommands>
-      </Target>
-      <Target title="cavity_mt/fast">
-         <Option output="/home/victor/zwd/cavity_mt/cavity_mt" prefix_auto="0" extension_auto="0" />
-         <Option working_dir="/home/victor/zwd/cavity_mt" />
-         <Option object_output="./" />
-         <Option type="1" />
-         <Option compiler="gcc" />
-         <Compiler>
-            <Add directory="/home/victor/zwd/cavity_mt/./include" />
-            <Add directory="/usr/include" />
-            <Add directory="/usr/include/c++/5" />
-            <Add directory="/usr/include/c++/5/backward" />
-            <Add directory="/usr/include/x86_64-linux-gnu" />
-            <Add directory="/usr/include/x86_64-linux-gnu/c++/5" />
-            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include" />
-            <Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed" />
-            <Add directory="/usr/local/include" />
-         </Compiler>
-         <MakeCommands>
-            <Build command="/usr/bin/make -f &quot;/home/victor/zwd/cavity_mt/Makefile&quot;  VERBOSE=1 cavity_mt/fast" />
-            <CompileFile command="/usr/bin/make -f &quot;/home/victor/zwd/cavity_mt/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
-            <Clean command="/usr/bin/make -f &quot;/home/victor/zwd/cavity_mt/Makefile&quot;  VERBOSE=1 clean" />
-            <DistClean command="/usr/bin/make -f &quot;/home/victor/zwd/cavity_mt/Makefile&quot;  VERBOSE=1 clean" />
-         </MakeCommands>
-      </Target>
-      </Build>
-      <Unit filename="/home/victor/zwd/cavity_mt/include/cav.h">
-         <Option target="cavity_mt"/>
-      </Unit>
-      <Unit filename="/home/victor/zwd/cavity_mt/include/cav_impl.h">
-         <Option target="cavity_mt"/>
-      </Unit>
-      <Unit filename="/home/victor/zwd/cavity_mt/include/handle.h">
-         <Option target="cavity_mt"/>
-      </Unit>
-      <Unit filename="/home/victor/zwd/cavity_mt/include/ocs_sim.h">
-         <Option target="cavity_mt"/>
-      </Unit>
-      <Unit filename="/home/victor/zwd/cavity_mt/include/pthread_mc.h">
-         <Option target="cavity_mt"/>
-      </Unit>
-      <Unit filename="/home/victor/zwd/cavity_mt/main.cpp">
-         <Option target="cavity_mt"/>
-      </Unit>
-      <Unit filename="/home/victor/zwd/cavity_mt/src/cav.cpp">
-         <Option target="cavity_mt"/>
-      </Unit>
-      <Unit filename="/home/victor/zwd/cavity_mt/src/cav_impl.cpp">
-         <Option target="cavity_mt"/>
-      </Unit>
-      <Unit filename="/home/victor/zwd/cavity_mt/src/handle.cpp">
-         <Option target="cavity_mt"/>
-      </Unit>
-      <Unit filename="/home/victor/zwd/cavity_mt/src/ocs_sim.cpp">
-         <Option target="cavity_mt"/>
-      </Unit>
-      <Unit filename="/home/victor/zwd/cavity_mt/src/pthread_mc.cpp">
-         <Option target="cavity_mt"/>
-      </Unit>
-      <Unit filename="/home/victor/zwd/cavity_mt/CMakeLists.txt">
-          <Option virtualFolder="CMake Files\" />
-      </Unit>
-   </Project>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="cavity_mt"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/victor/zwd/cavity_mt"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/victor/zwd/cavity_mt/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/victor/zwd/cavity_mt/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/victor/zwd/cavity_mt/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/victor/zwd/cavity_mt/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/victor/zwd/cavity_mt"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/victor/zwd/cavity_mt/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/victor/zwd/cavity_mt/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/victor/zwd/cavity_mt/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/victor/zwd/cavity_mt/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/victor/zwd/cavity_mt"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/victor/zwd/cavity_mt/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/victor/zwd/cavity_mt/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/victor/zwd/cavity_mt/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/victor/zwd/cavity_mt/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="cavity_mt">
+				<Option output="/home/victor/zwd/cavity_mt/cavity_mt" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/victor/zwd/cavity_mt"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/victor/zwd/cavity_mt/./include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/victor/zwd/cavity_mt/Makefile&quot;  VERBOSE=1 cavity_mt"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/victor/zwd/cavity_mt/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/victor/zwd/cavity_mt/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/victor/zwd/cavity_mt/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="cavity_mt/fast">
+				<Option output="/home/victor/zwd/cavity_mt/cavity_mt" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/victor/zwd/cavity_mt"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/victor/zwd/cavity_mt/./include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/victor/zwd/cavity_mt/Makefile&quot;  VERBOSE=1 cavity_mt/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/victor/zwd/cavity_mt/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/victor/zwd/cavity_mt/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/victor/zwd/cavity_mt/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/victor/zwd/cavity_mt/include/cav.h">
+			<Option target="cavity_mt"/>
+		</Unit>
+		<Unit filename="/home/victor/zwd/cavity_mt/include/cav_impl.h">
+			<Option target="cavity_mt"/>
+		</Unit>
+		<Unit filename="/home/victor/zwd/cavity_mt/include/handle.h">
+			<Option target="cavity_mt"/>
+		</Unit>
+		<Unit filename="/home/victor/zwd/cavity_mt/include/ocs_sim.h">
+			<Option target="cavity_mt"/>
+		</Unit>
+		<Unit filename="/home/victor/zwd/cavity_mt/include/pthread_mc.h">
+			<Option target="cavity_mt"/>
+		</Unit>
+		<Unit filename="/home/victor/zwd/cavity_mt/main.cpp">
+			<Option target="cavity_mt"/>
+		</Unit>
+		<Unit filename="/home/victor/zwd/cavity_mt/src/handle.cpp">
+			<Option target="cavity_mt"/>
+		</Unit>
+		<Unit filename="/home/victor/zwd/cavity_mt/src/ocs_sim.cpp">
+			<Option target="cavity_mt"/>
+		</Unit>
+		<Unit filename="/home/victor/zwd/cavity_mt/src/pthread_mc.cpp">
+			<Option target="cavity_mt"/>
+		</Unit>
+		<Unit filename="/home/victor/zwd/cavity_mt/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
 </CodeBlocks_project_file>

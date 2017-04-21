@@ -78,6 +78,7 @@ void ocs_sim::show_ocs() {
         else
             std::cout<<std::left<<std::setw(4)<<"*";
     }
+    std::cout<<std::endl;
 }
 
 int ocs_sim::delete_mt(int first_ad) {
@@ -101,6 +102,6 @@ int ocs_sim::add_mt(int first_ad, int size) {
     mt[mt_num].first_addr = first_ad;
     mt[mt_num].length = size;
     mt[mt_num].statu = FREE;
-    mt_num = mt_num;
+    mt_num = mt_num + 1;
     return 1;
 }

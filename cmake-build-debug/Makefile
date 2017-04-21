@@ -48,10 +48,10 @@ RM = /home/victor/Downloads/clion-2016.3.3/bin/cmake/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/victor/zwd/cavity_mt
+CMAKE_SOURCE_DIR = /home/victor/zwd/cavity_mt_no_pthread
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/victor/zwd/cavity_mt/cmake-build-debug
+CMAKE_BINARY_DIR = /home/victor/zwd/cavity_mt_no_pthread/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/victor/zwd/cavity_mt/cmake-build-debug/CMakeFiles /home/victor/zwd/cavity_mt/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/victor/zwd/cavity_mt_no_pthread/cmake-build-debug/CMakeFiles /home/victor/zwd/cavity_mt_no_pthread/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/victor/zwd/cavity_mt/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/victor/zwd/cavity_mt_no_pthread/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -111,17 +111,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named cavity_mt
+# Target rules for targets named cavity_mt_no_pthread
 
 # Build rule for target.
-cavity_mt: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 cavity_mt
-.PHONY : cavity_mt
+cavity_mt_no_pthread: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 cavity_mt_no_pthread
+.PHONY : cavity_mt_no_pthread
 
 # fast build rule for target.
-cavity_mt/fast:
-	$(MAKE) -f CMakeFiles/cavity_mt.dir/build.make CMakeFiles/cavity_mt.dir/build
-.PHONY : cavity_mt/fast
+cavity_mt_no_pthread/fast:
+	$(MAKE) -f CMakeFiles/cavity_mt_no_pthread.dir/build.make CMakeFiles/cavity_mt_no_pthread.dir/build
+.PHONY : cavity_mt_no_pthread/fast
 
 main.o: main.cpp.o
 
@@ -129,7 +129,7 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	$(MAKE) -f CMakeFiles/cavity_mt.dir/build.make CMakeFiles/cavity_mt.dir/main.cpp.o
+	$(MAKE) -f CMakeFiles/cavity_mt_no_pthread.dir/build.make CMakeFiles/cavity_mt_no_pthread.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -138,7 +138,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) -f CMakeFiles/cavity_mt.dir/build.make CMakeFiles/cavity_mt.dir/main.cpp.i
+	$(MAKE) -f CMakeFiles/cavity_mt_no_pthread.dir/build.make CMakeFiles/cavity_mt_no_pthread.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -147,62 +147,8 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) -f CMakeFiles/cavity_mt.dir/build.make CMakeFiles/cavity_mt.dir/main.cpp.s
+	$(MAKE) -f CMakeFiles/cavity_mt_no_pthread.dir/build.make CMakeFiles/cavity_mt_no_pthread.dir/main.cpp.s
 .PHONY : main.cpp.s
-
-src/cav.o: src/cav.cpp.o
-
-.PHONY : src/cav.o
-
-# target to build an object file
-src/cav.cpp.o:
-	$(MAKE) -f CMakeFiles/cavity_mt.dir/build.make CMakeFiles/cavity_mt.dir/src/cav.cpp.o
-.PHONY : src/cav.cpp.o
-
-src/cav.i: src/cav.cpp.i
-
-.PHONY : src/cav.i
-
-# target to preprocess a source file
-src/cav.cpp.i:
-	$(MAKE) -f CMakeFiles/cavity_mt.dir/build.make CMakeFiles/cavity_mt.dir/src/cav.cpp.i
-.PHONY : src/cav.cpp.i
-
-src/cav.s: src/cav.cpp.s
-
-.PHONY : src/cav.s
-
-# target to generate assembly for a file
-src/cav.cpp.s:
-	$(MAKE) -f CMakeFiles/cavity_mt.dir/build.make CMakeFiles/cavity_mt.dir/src/cav.cpp.s
-.PHONY : src/cav.cpp.s
-
-src/cav_impl.o: src/cav_impl.cpp.o
-
-.PHONY : src/cav_impl.o
-
-# target to build an object file
-src/cav_impl.cpp.o:
-	$(MAKE) -f CMakeFiles/cavity_mt.dir/build.make CMakeFiles/cavity_mt.dir/src/cav_impl.cpp.o
-.PHONY : src/cav_impl.cpp.o
-
-src/cav_impl.i: src/cav_impl.cpp.i
-
-.PHONY : src/cav_impl.i
-
-# target to preprocess a source file
-src/cav_impl.cpp.i:
-	$(MAKE) -f CMakeFiles/cavity_mt.dir/build.make CMakeFiles/cavity_mt.dir/src/cav_impl.cpp.i
-.PHONY : src/cav_impl.cpp.i
-
-src/cav_impl.s: src/cav_impl.cpp.s
-
-.PHONY : src/cav_impl.s
-
-# target to generate assembly for a file
-src/cav_impl.cpp.s:
-	$(MAKE) -f CMakeFiles/cavity_mt.dir/build.make CMakeFiles/cavity_mt.dir/src/cav_impl.cpp.s
-.PHONY : src/cav_impl.cpp.s
 
 src/handle.o: src/handle.cpp.o
 
@@ -210,7 +156,7 @@ src/handle.o: src/handle.cpp.o
 
 # target to build an object file
 src/handle.cpp.o:
-	$(MAKE) -f CMakeFiles/cavity_mt.dir/build.make CMakeFiles/cavity_mt.dir/src/handle.cpp.o
+	$(MAKE) -f CMakeFiles/cavity_mt_no_pthread.dir/build.make CMakeFiles/cavity_mt_no_pthread.dir/src/handle.cpp.o
 .PHONY : src/handle.cpp.o
 
 src/handle.i: src/handle.cpp.i
@@ -219,7 +165,7 @@ src/handle.i: src/handle.cpp.i
 
 # target to preprocess a source file
 src/handle.cpp.i:
-	$(MAKE) -f CMakeFiles/cavity_mt.dir/build.make CMakeFiles/cavity_mt.dir/src/handle.cpp.i
+	$(MAKE) -f CMakeFiles/cavity_mt_no_pthread.dir/build.make CMakeFiles/cavity_mt_no_pthread.dir/src/handle.cpp.i
 .PHONY : src/handle.cpp.i
 
 src/handle.s: src/handle.cpp.s
@@ -228,7 +174,7 @@ src/handle.s: src/handle.cpp.s
 
 # target to generate assembly for a file
 src/handle.cpp.s:
-	$(MAKE) -f CMakeFiles/cavity_mt.dir/build.make CMakeFiles/cavity_mt.dir/src/handle.cpp.s
+	$(MAKE) -f CMakeFiles/cavity_mt_no_pthread.dir/build.make CMakeFiles/cavity_mt_no_pthread.dir/src/handle.cpp.s
 .PHONY : src/handle.cpp.s
 
 src/ocs_sim.o: src/ocs_sim.cpp.o
@@ -237,7 +183,7 @@ src/ocs_sim.o: src/ocs_sim.cpp.o
 
 # target to build an object file
 src/ocs_sim.cpp.o:
-	$(MAKE) -f CMakeFiles/cavity_mt.dir/build.make CMakeFiles/cavity_mt.dir/src/ocs_sim.cpp.o
+	$(MAKE) -f CMakeFiles/cavity_mt_no_pthread.dir/build.make CMakeFiles/cavity_mt_no_pthread.dir/src/ocs_sim.cpp.o
 .PHONY : src/ocs_sim.cpp.o
 
 src/ocs_sim.i: src/ocs_sim.cpp.i
@@ -246,7 +192,7 @@ src/ocs_sim.i: src/ocs_sim.cpp.i
 
 # target to preprocess a source file
 src/ocs_sim.cpp.i:
-	$(MAKE) -f CMakeFiles/cavity_mt.dir/build.make CMakeFiles/cavity_mt.dir/src/ocs_sim.cpp.i
+	$(MAKE) -f CMakeFiles/cavity_mt_no_pthread.dir/build.make CMakeFiles/cavity_mt_no_pthread.dir/src/ocs_sim.cpp.i
 .PHONY : src/ocs_sim.cpp.i
 
 src/ocs_sim.s: src/ocs_sim.cpp.s
@@ -255,7 +201,7 @@ src/ocs_sim.s: src/ocs_sim.cpp.s
 
 # target to generate assembly for a file
 src/ocs_sim.cpp.s:
-	$(MAKE) -f CMakeFiles/cavity_mt.dir/build.make CMakeFiles/cavity_mt.dir/src/ocs_sim.cpp.s
+	$(MAKE) -f CMakeFiles/cavity_mt_no_pthread.dir/build.make CMakeFiles/cavity_mt_no_pthread.dir/src/ocs_sim.cpp.s
 .PHONY : src/ocs_sim.cpp.s
 
 src/pthread_mc.o: src/pthread_mc.cpp.o
@@ -264,7 +210,7 @@ src/pthread_mc.o: src/pthread_mc.cpp.o
 
 # target to build an object file
 src/pthread_mc.cpp.o:
-	$(MAKE) -f CMakeFiles/cavity_mt.dir/build.make CMakeFiles/cavity_mt.dir/src/pthread_mc.cpp.o
+	$(MAKE) -f CMakeFiles/cavity_mt_no_pthread.dir/build.make CMakeFiles/cavity_mt_no_pthread.dir/src/pthread_mc.cpp.o
 .PHONY : src/pthread_mc.cpp.o
 
 src/pthread_mc.i: src/pthread_mc.cpp.i
@@ -273,7 +219,7 @@ src/pthread_mc.i: src/pthread_mc.cpp.i
 
 # target to preprocess a source file
 src/pthread_mc.cpp.i:
-	$(MAKE) -f CMakeFiles/cavity_mt.dir/build.make CMakeFiles/cavity_mt.dir/src/pthread_mc.cpp.i
+	$(MAKE) -f CMakeFiles/cavity_mt_no_pthread.dir/build.make CMakeFiles/cavity_mt_no_pthread.dir/src/pthread_mc.cpp.i
 .PHONY : src/pthread_mc.cpp.i
 
 src/pthread_mc.s: src/pthread_mc.cpp.s
@@ -282,7 +228,7 @@ src/pthread_mc.s: src/pthread_mc.cpp.s
 
 # target to generate assembly for a file
 src/pthread_mc.cpp.s:
-	$(MAKE) -f CMakeFiles/cavity_mt.dir/build.make CMakeFiles/cavity_mt.dir/src/pthread_mc.cpp.s
+	$(MAKE) -f CMakeFiles/cavity_mt_no_pthread.dir/build.make CMakeFiles/cavity_mt_no_pthread.dir/src/pthread_mc.cpp.s
 .PHONY : src/pthread_mc.cpp.s
 
 # Help Target
@@ -293,16 +239,10 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... cavity_mt"
+	@echo "... cavity_mt_no_pthread"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
-	@echo "... src/cav.o"
-	@echo "... src/cav.i"
-	@echo "... src/cav.s"
-	@echo "... src/cav_impl.o"
-	@echo "... src/cav_impl.i"
-	@echo "... src/cav_impl.s"
 	@echo "... src/handle.o"
 	@echo "... src/handle.i"
 	@echo "... src/handle.s"

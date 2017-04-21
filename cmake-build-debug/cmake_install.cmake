@@ -1,4 +1,4 @@
-# Install script for directory: /home/victor/zwd/cavity_mt
+# Install script for directory: /home/victor/zwd/cavity_mt_no_pthread
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/victor/zwd/cavity_mt/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/victor/zwd/cavity_mt_no_pthread/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

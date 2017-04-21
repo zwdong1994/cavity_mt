@@ -54,45 +54,45 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/victor/zwd/cavity_mt
+CMAKE_SOURCE_DIR = /home/victor/zwd/cavity_mt_no_pthread
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/victor/zwd/cavity_mt
+CMAKE_BINARY_DIR = /home/victor/zwd/cavity_mt_no_pthread
 
 #=============================================================================
-# Target rules for target CMakeFiles/cavity_mt.dir
+# Target rules for target CMakeFiles/cavity_mt_no_pthread.dir
 
 # All Build rule for target.
-CMakeFiles/cavity_mt.dir/all:
-	$(MAKE) -f CMakeFiles/cavity_mt.dir/build.make CMakeFiles/cavity_mt.dir/depend
-	$(MAKE) -f CMakeFiles/cavity_mt.dir/build.make CMakeFiles/cavity_mt.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/victor/zwd/cavity_mt/CMakeFiles --progress-num=1,2,3,4,5,6,7 "Built target cavity_mt"
-.PHONY : CMakeFiles/cavity_mt.dir/all
+CMakeFiles/cavity_mt_no_pthread.dir/all:
+	$(MAKE) -f CMakeFiles/cavity_mt_no_pthread.dir/build.make CMakeFiles/cavity_mt_no_pthread.dir/depend
+	$(MAKE) -f CMakeFiles/cavity_mt_no_pthread.dir/build.make CMakeFiles/cavity_mt_no_pthread.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/victor/zwd/cavity_mt_no_pthread/CMakeFiles --progress-num=1,2,3,4,5 "Built target cavity_mt_no_pthread"
+.PHONY : CMakeFiles/cavity_mt_no_pthread.dir/all
 
 # Include target in all.
-all: CMakeFiles/cavity_mt.dir/all
+all: CMakeFiles/cavity_mt_no_pthread.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/cavity_mt.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/victor/zwd/cavity_mt/CMakeFiles 7
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/cavity_mt.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/victor/zwd/cavity_mt/CMakeFiles 0
-.PHONY : CMakeFiles/cavity_mt.dir/rule
+CMakeFiles/cavity_mt_no_pthread.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/victor/zwd/cavity_mt_no_pthread/CMakeFiles 5
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/cavity_mt_no_pthread.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/victor/zwd/cavity_mt_no_pthread/CMakeFiles 0
+.PHONY : CMakeFiles/cavity_mt_no_pthread.dir/rule
 
 # Convenience name for target.
-cavity_mt: CMakeFiles/cavity_mt.dir/rule
+cavity_mt_no_pthread: CMakeFiles/cavity_mt_no_pthread.dir/rule
 
-.PHONY : cavity_mt
-
-# clean rule for target.
-CMakeFiles/cavity_mt.dir/clean:
-	$(MAKE) -f CMakeFiles/cavity_mt.dir/build.make CMakeFiles/cavity_mt.dir/clean
-.PHONY : CMakeFiles/cavity_mt.dir/clean
+.PHONY : cavity_mt_no_pthread
 
 # clean rule for target.
-clean: CMakeFiles/cavity_mt.dir/clean
+CMakeFiles/cavity_mt_no_pthread.dir/clean:
+	$(MAKE) -f CMakeFiles/cavity_mt_no_pthread.dir/build.make CMakeFiles/cavity_mt_no_pthread.dir/clean
+.PHONY : CMakeFiles/cavity_mt_no_pthread.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/cavity_mt_no_pthread.dir/clean
 
 .PHONY : clean
 
